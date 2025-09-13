@@ -4,7 +4,7 @@ services:
   name: cb_prod_lang132
   runtime: docker
   repo: https://github.com/vktinker/langflow15
-  plan: pro plus
+  plan: pro
   envVars:
   - key: LANGFLOW_SUPERUSER_PASSWORD
     sync: false
