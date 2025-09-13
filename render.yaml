@@ -1,0 +1,23 @@
+# Exported from Render on 2025-09-13T21:42:04Z
+services:
+- type: web
+  name: cb_prod_lang132
+  runtime: docker
+  repo: https://github.com/vktinker/langflow132
+  plan: pro plus
+  envVars:
+  - key: LANGFLOW_SUPERUSER_PASSWORD
+    sync: false
+  - key: LANGFLOW_SUPERUSER
+    sync: false
+  - key: LANGFLOW_DATABASE_URL
+    sync: false
+  - key: LANGFLOW_SECRET_KEY
+    sync: false
+  - key: LANGFLOW_AUTO_LOGIN
+    sync: false
+  region: singapore
+  dockerContext: .
+  dockerfilePath: render.Dockerfile
+  autoDeployTrigger: commit
+version: "1"
