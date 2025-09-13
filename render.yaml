@@ -10,8 +10,6 @@ services:
     sync: false
   - key: LANGFLOW_SUPERUSER
     sync: false
-  - key: LANGFLOW_DATABASE_URL
-    sync: false
   - key: LANGFLOW_SECRET_KEY
     sync: false
   - key: LANGFLOW_AUTO_LOGIN
